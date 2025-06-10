@@ -54,3 +54,11 @@ h1 {
   display: block;
   margin: 0 auto;
 }
+
+.testimonial-img {
+  width: 100px; /* Ajuste conforme necessário */
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff; /* Borda elegante */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}

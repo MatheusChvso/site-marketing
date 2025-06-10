@@ -89,15 +89,47 @@ export default function Oferta() {
           </div>
         </section>
 
-        {/* Depoimentos */}
-        <section className="mt-5 bg-light p-5 rounded shadow">
-          <h2 className="fw-bold text-dark">❤️ O que dizem as apaixonadas por Reborn</h2>
-          <div className="mt-3">
-            <blockquote className="blockquote text-primary">"Nunca imaginei que um e-book pudesse me fazer chorar de emoção! Obrigada por tanto!" – <i>Ana C.</i></blockquote>
-            <blockquote className="blockquote text-success">"Vendi meu primeiro reborn depois de aplicar só uma dica do guia. Tô emocionada!" – <i>Luiza R.</i></blockquote>
-            <blockquote className="blockquote text-danger">"Cuido da minha bebê como se fosse real. O guia mudou minha vida!" – <i>Juliana F.</i></blockquote>
-          </div>
-        </section>
+        {/* Depoimentos com fotos */}
+<section className="mt-5 bg-light p-5 rounded shadow">
+  <h2 className="fw-bold text-dark">❤️ O que dizem as apaixonadas por Reborn</h2>
+  <div className="row g-4">
+    {/* Depoimento 1 */}
+    <div className="col-md-4 text-center">
+      <motion.div 
+        className="testimonial-card p-3 border rounded shadow"
+        whileHover={{ scale: 1.05 }}
+      >
+        <img src="cliente1.png" alt="Foto de cliente" className="testimonial-img rounded-circle mb-3" />
+        <blockquote className="blockquote text-primary">"Nunca imaginei que um e-book pudesse me fazer chorar de emoção! Obrigada por tanto!"</blockquote>
+        <i><strong>Ana C.</strong></i>
+      </motion.div>
+    </div>
+
+    {/* Depoimento 2 */}
+    <div className="col-md-4 text-center">
+      <motion.div 
+        className="testimonial-card p-3 border rounded shadow"
+        whileHover={{ scale: 1.05 }}
+      >
+        <img src="cliente2.png" alt="Foto de cliente" className="testimonial-img rounded-circle mb-3" />
+        <blockquote className="blockquote text-success">"Vendi meu primeiro reborn depois de aplicar só uma dica do guia. Tô emocionada!"</blockquote>
+        <i><strong>Luiza R.</strong></i>
+      </motion.div>
+    </div>
+
+    {/* Depoimento 3 */}
+    <div className="col-md-4 text-center">
+      <motion.div 
+        className="testimonial-card p-3 border rounded shadow"
+        whileHover={{ scale: 1.05 }}
+      >
+        <img src="cliente3.png" alt="Foto de cliente" className="testimonial-img rounded-circle mb-3" />
+        <blockquote className="blockquote text-danger">"Cuido da minha bebê como se fosse real. O guia mudou minha vida!"</blockquote>
+        <i><strong>Juliana F.</strong></i>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
         {/* Chamada para ação */}
         <motion.section 
