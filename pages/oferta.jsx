@@ -71,7 +71,7 @@ export default function Oferta() {
                 className="card text-center p-4 border-0 shadow-lg"
                 whileHover={{ scale: 1.05 }}
               >
-                <img src="/bebe1.png" alt="Ícone lucro" className="img-fluid mx-auto mb-3" />
+                <img src="/bebex.png" alt="Ícone lucro" className="img-fluid mx-auto mb-3" />
                 <h3 className="text-primary">📈 Lucro com Amor</h3>
                 <p>Aprenda a transformar sua paixão em um negócio que aquece o coração e enche o bolso.</p>
               </motion.div>
@@ -81,7 +81,7 @@ export default function Oferta() {
                 className="card text-center p-4 border-0 shadow-lg"
                 whileHover={{ scale: 1.05 }}
               >
-                <img src="https://cdn-icons-png.flaticon.com/512/3195/3195776.png" alt="Ícone cuidados" className="img-fluid mx-auto mb-3" />
+                <img src="ebookcover.png" alt="Ícone cuidados" className="img-fluid mx-auto mb-3" />
                 <h3 className="text-primary">💖 Cuidado Profundo</h3>
                 <p>Seu bebê reborn merece carinho profissional. Aprenda os segredos das artesãs mais respeitadas.</p>
               </motion.div>
@@ -120,18 +120,21 @@ export default function Oferta() {
 
       {/* Barra lateral da direita - Galeria de Imagens */}
       <aside className="sidebar-right bg-light text-center p-4 rounded shadow">
-        <h3 className="fw-bold text-primary">📸 Bebês Reborn em Destaque</h3>
-        <motion.div 
-          className="image-gallery"
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img src="image1.jpg" alt="Bebê Reborn 1" className="img-fluid rounded mb-3" />
-          <img src="image2.jpg" alt="Bebê Reborn 2" className="img-fluid rounded mb-3" />
-          <img src="image3.jpg" alt="Bebê Reborn 3" className="img-fluid rounded mb-3" />
-        </motion.div>
-      </aside>
+  <h3 className="fw-bold text-primary">📸 Bebês Reborn em Destaque</h3>
+  <motion.div 
+    className="image-gallery"
+    initial={{ x: 20, opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
+    transition={{ duration: 0.8 }}
+  >
+    <img src="bebe1.png" alt="Bebê Reborn 1" className="img-fixed rounded mb-3" />
+    <img src="bebe3.png" alt="Bebê Reborn 2" className="img-fixed rounded mb-3" />
+    <img src="bebe4.png" alt="Bebê Reborn 3" className="img-fixed rounded mb-3" />
+    <img src="bebe2.png" alt="Bebê Reborn 3" className="img-fixed rounded mb-3" />
+    <img src="bebe5.png" alt="Bebê Reborn 3" className="img-fixed rounded mb-3" />
+    <img src="bebe6.png" alt="Bebê Reborn 3" className="img-fixed rounded mb-3" />
+  </motion.div>
+</aside>
     </div>
   );
 }
